@@ -19,7 +19,7 @@ jobs:
       - name: Clone project
         run: git clone --depth=1 ${{ steps.get-project.outputs.PROJECT }} project
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v3
+        uses: gradle/gradle-build-action@v2
       - name: Build the app
         working-directory: ./project
         run: |
